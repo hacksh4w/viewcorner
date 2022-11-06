@@ -4,7 +4,7 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
   return (
     <div className="movie" key={imdbID}>
       <div>
-        <p>{Year}</p>
+        <p> {Year} </p>
       </div>
 
       <div>
@@ -12,8 +12,8 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
       </div>
 
       <div>
-        <span>{Type}</span>
-        <h3>{Title}</h3>
+        <span> {Type} </span>
+        <h3> {Title} </h3>
       </div>
     </div>
   );
