@@ -25,7 +25,8 @@ A Movie Suggestion app made primarily using React.
 
 ## 🔧 Project Demo:
 ### Live Demo
-Hosted Link : https://
+Hosted Link : https://viewcorner.netlify.app/
+Currently only works locally
 
 # Installation
 Steps To Run the Project:
