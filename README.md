@@ -1,4 +1,4 @@
-**<div align="center">MovieCorner</div>**
+**<div align="center">ViewCorner</div>**
 <desc>
 
 A Movie Suggestion App made using react.
@@ -8,13 +8,13 @@ A Movie Suggestion App made using react.
 
 
 ## Table of Contents
-1. [What is MovieCorner](#project-description)
+1. [What is ViewCorner](#project-description)
 2. [Key Features](#key-features)
 3. [Project Demo](#project-demo)
 4. [Installation](#installation)
 
 
-## What is MovieCorner? 
+## What is ViewCorner 
 A Movie Suggestion app made primarily using React.
 
 
