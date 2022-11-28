@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 import "./App.css";
@@ -11,7 +10,7 @@ const App = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies();
   }, []);
 
   const searchMovies = async (title) => {
@@ -21,6 +20,21 @@ const App = () => {
     setMovies(data.Search);
   };
 
+  useEffect(() => {
+    const listener = event => {
+      if (event.code === "Enter" || event.code === "NumpadEnter") {
+        console.log("Enter key was pressed. Run your function.");
+        event.preventDefault();
+        document.getElementsById("search")
+
+      }
+    };
+    document.addEventListener("keydown", listener);
+    return () => {
+      document.removeEventListener("keydown", listener);
+    };
+  }, []) 
+  
   return (
     <div className="app">
       <h1>ViewCorner</h1>
@@ -33,6 +47,7 @@ const App = () => {
         />
         <img
           src={SearchIcon}
+          id = "searchicon"
           alt="search"
           onClick={() => searchMovies(searchTerm)}
         />
